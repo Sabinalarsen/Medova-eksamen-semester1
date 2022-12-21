@@ -1,0 +1,1091 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+@font-face {
+    font-family: brush;
+    src: url(../font/BrushEffect-3zrGG.otf);
+}
+
+
+
+:root {
+--darkred: #7c000a;
+--lightred: #c55a3f;
+--white: #fff;
+--background: #e2d2c3;
+}
+
+html{
+    background-color: #e2d2c3;
+}
+
+main{
+    width: 100%;
+}
+
+/* Navbaren */
+
+header {
+    background-color: var(--lightred);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'brush';
+    color: var(--white);
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.hamburger-cart-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart img {
+    width: 1rem;
+}
+
+.cart-li {
+    display: none;
+}
+
+.nav-link:hover {
+    color: var(--darkred);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--lightred);
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    z-index: 100;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* filler bagnavbar */
+
+.filler {
+    height: 70px;
+    width: 100%;
+}
+
+/* Forside styling */
+.top {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title-desktop {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'brush';
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: var(--darkred);
+}
+
+h3 {
+    text-align: center;
+    font-family: 'brush';
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.center-picture {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+.tekst-top {
+    margin: 2rem 5rem;
+}
+
+/* styling på knap */
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.link{
+    padding: 1rem 2rem;
+    background-color: var(--lightred);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--background);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 19px;
+}
+
+/* Videre styling på forside*/
+.middel {
+    width: 100%;
+}
+
+.middel p {
+    margin: 0rem 5rem;
+}
+
+#underpunkt {
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bottom p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0rem 5rem;
+
+}
+
+/* Underside Vores te*/
+.top-te {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.middel-te {
+    width: 100%;
+}
+
+.middel-te p {
+    margin: 0rem 5rem;
+}
+
+.extra {
+    display: none;
+}
+
+.voreste-pic {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 40%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.indhold {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.tekst-te{
+    margin: 0rem 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Underside Webshob styling */
+.top h3 {
+    margin-top: 1rem;
+}
+
+.banner {
+    background-color: #d1b797;
+    height: 12rem;
+}
+
+.banner h3 {
+    padding-top: 1rem;
+}
+
+.banner-tekst {
+    text-align: center;
+    margin: 0rem 3rem;
+
+}
+
+.shop {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.mulepose {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+.mulepose:hover {
+    opacity: 60%;
+}
+
+.mug {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+.mug:hover {
+    opacity: 60%;
+}
+
+.cover {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cover:hover {
+    opacity: 60%;
+}
+
+.shop-produkt {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+
+}
+
+.pris {
+    text-align: center;
+}
+
+/* Underside indkøbskurv tom */
+.empty-cart {
+    width: 100%;
+}
+
+.sadbag {
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.empty {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.empty2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+/* Underside produktsider */
+.produkt {
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+h4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    margin: 0rem 1.5rem;
+
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin: 0rem 1.5rem;
+
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0rem 1.5rem;
+
+}
+
+.price {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2rem;
+}
+
+.produktbeskrivelse {
+    margin: 0rem 1.5rem;
+}
+
+#model {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.background-produktion-desktop {
+    display: none;
+}
+
+/* Underside Teens rejse - infographic */
+.background-produktion img {
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 100vw;
+    display: block;
+
+}
+
+
+/* Underside kontakt Medova*/
+.contact {
+    width: 100%;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.contact h4 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.mail {
+    text-align: center;
+    margin: 1rem;
+}
+
+.mail span {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.phone {
+    text-align: center;
+    margin: 1rem;
+}
+
+.phone span {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.open {
+    text-align: center;
+    margin: 1rem;
+    padding: 0rem 2rem;
+}
+
+.open span {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.logo-center {
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+
+/* footer */
+footer{
+    background-color: #21462c;
+}
+
+.footer-img {
+    position: absolute;
+}
+
+.footer-desktop {
+    display: none;
+}
+
+
+/* Tablet */ 
+
+@media (min-width:480px) {
+    .center-picture {
+        width: 60%;
+    }
+
+    .tekst-top {
+        margin: 2rem 11rem;
+        font-size: 1.2rem;
+    }
+
+    .tekst-te {
+        margin: 0rem 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .left-picture {
+        width: 60%;
+    }
+
+    .middel p {
+        font-size: 1.2rem;
+        margin: 0rem 8rem;
+    }
+
+    .middel-te p {
+        margin: 0rem 6rem;
+    }
+
+    #underpunkt {
+        font-size: 1.1rem;
+    }
+
+    .bottom p {
+        font-size: 1.2rem;
+        margin: 0rem 8rem;
+    }
+
+    .extra {
+        display: block;
+        width: 50%;
+    /* en ekstra filler for at placere img til højre på skærmen */
+    }
+
+    .picture-container {
+        display: flex;
+    }
+
+    .right-picture {
+        width: 50%;
+    }
+
+    .logo-center {
+        width: 40%;
+    }
+
+    .box img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .indhold img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width:770px) {
+/* Fra hamburger bar til menupunkter i navbar */
+    .nav-menu {
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        left: 0;
+        top: 0;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+
+    .hamburger-cart-container {
+        display: none;
+    }
+
+    .cart-li {
+        width: 1rem;
+        display: flex;
+    }
+
+/* Forside */
+    h1 {
+        padding-left: 1.8rem;
+    }
+
+    .top{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 800px;
+        margin: auto;
+    }
+
+    .title-mobile {
+        display: none;
+    }
+
+    .title-desktop {
+        display: block;
+        font-size: 4rem;
+    }
+
+    .center-picture{
+        width: 50%;
+        order: 2;
+        display: flex;
+    }
+
+    .center-picture img{
+        width: 80%;
+        align-content: flex-end;
+        margin: auto;
+        padding-bottom: 15%;
+
+    }
+
+    .top-container{
+        width: 50%;
+        height: 100%;
+        margin: 0 ;
+        margin-top: 5%;
+    }
+
+    .tekst-top {
+        padding-top: 2.5rem;
+        font-size: 1.2rem;
+        margin: 2rem 5rem;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .middel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .middel p {
+        margin: 0rem 4rem;
+    }
+
+    .left-picture {
+        width: 40%;
+    }
+
+    .middel-container {
+        width: 50%;
+        height: 100%;
+        margin: 0 ;
+        order: 2;
+        font-size: 1.2rem;
+        margin: auto;
+        margin-top: 2%;
+    }
+
+    #underpunkt {
+        font-size: 1rem;
+    }
+
+/* knap - gøres større */
+    .link {
+        padding: 1rem 3rem;
+        font-size: 22px;
+    }
+
+/*bund på forsiden */
+    .bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .extra {
+        display: none;
+    /* img og tekst skal stå ved siden af hinanden og jeg fjerner derfor den ekstra filler */
+    }
+
+    .right-picture {
+        width: 100%;
+    }
+
+    .picture-container {
+        width: 50%;
+    }
+
+    .bottom-container {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    .bottom p {
+        margin: 0rem 5rem;
+    }
+
+/* vores te - underside */
+    .top-te {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 80%;
+    }
+
+    .top-te h3 {
+        font-size: 2.8rem;
+    }
+
+    .tekst-te {
+        font-size: 1.2rem;
+        margin: 0rem 3rem;
+        padding-top: 1rem;
+    }
+
+    .box{
+        width: 50%;
+        order: 2;
+        display: flex;
+        padding: 0%;
+    }
+
+    .box img{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+    }
+
+    .top h3 {
+        font-size: 3rem;
+    }
+    
+    .middel-te h3 {
+        font-size: 3rem;
+        margin: 3rem 0rem;
+    }
+
+    .middel-te {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .middel-te p {
+        margin: 0rem 1rem;
+    }
+
+
+    .voreste-pic {
+        order: 2;
+        width: 30%;
+        margin: auto;
+    }
+
+    .indhold {
+        width: 30%;
+        margin: auto;
+    }
+
+    .indhold img {
+        width: 80%;
+    }
+
+/* Webshop - underside */
+    .banner h3 {
+        font-size: 2.2rem;
+        margin: auto;
+    }
+
+    .banner-tekst {
+        font-size: 1.2rem;
+        width: 50%;
+        margin: auto;
+    }
+
+    .shop-container-top {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop-container-middel {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop-container-bottom {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop {
+        width: 50%;
+        margin: auto;
+    }
+
+/* produktside - underside */
+
+    .produktinfo {
+        display: flex;
+    }
+
+    .produkt {
+        width: 50%;
+        margin: auto;
+    }
+
+    .produktinfo img {
+        width: 50%;
+        margin: 0rem 7rem;
+        padding: 0%;
+    }
+
+    .produktinfo-right {
+        width: 50%;
+        margin: auto;
+    }
+
+    h6 {
+        margin: 0rem 7rem;
+    }
+
+    .produktbeskrivelse {
+        margin: 0rem 7rem;
+    }
+
+/* indkøbskurv tom */
+    .empty-cart {
+        width: 50%;
+        margin: auto;
+    }
+
+    .sadbag {
+        width: 50%;
+    }
+
+    .empty2 {
+        font-size: 1.4rem;
+    }
+
+/* Teens rejse - underside */
+    .background-produktion-desktop {
+        display: block;
+    }
+
+    .background-produktion {
+        display: none;
+    }
+
+    .logo-center {
+        width: 30%;
+    }
+
+/* kontakt - underside */
+    .contact h2 {
+        margin: 0 auto;
+        padding: 1rem 0rem;
+    }
+
+/* footer */
+    .footer-img {
+        display: none;
+    }
+
+    .footer-desktop {
+        display: block;
+    }
+
+}
+
+/* Desktop large */
+
+@media (min-width:1024px) {
+    .nav-menu {
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        left: 0;
+        top: 0;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+
+    .hamburger-cart-container {
+        display: none;
+    }
+
+    .cart-li {
+        width: 1rem;
+        display: flex;
+    }
+
+    h1 {
+        padding-left: 1.8rem;
+    }
+
+    .top{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 800px;
+        margin: auto;
+    }
+
+    .title-mobile {
+        display: none;
+    }
+
+    .title-desktop {
+        display: block;
+        font-size: 4rem;
+    }
+
+    .center-picture{
+        width: 50%;
+        order: 2;
+        display: flex;
+    }
+
+    .center-picture img{
+        width: 80%;
+        align-content: flex-end;
+        margin: auto;
+        padding-bottom: 15%;
+
+    }
+
+    .top-container{
+        width: 50%;
+        height: 100%;
+        margin: 0 ;
+        margin-top: 5%;
+    }
+
+    .tekst-top {
+        padding-top: 3rem;
+        font-size: 1.9rem;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .middel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .middel p {
+        margin: 0rem 3rem;
+    }
+
+    .left-picture {
+        width: 40%;
+    }
+
+    .middel-container {
+        width: 50%;
+        height: 100%;
+        margin: 0 ;
+        order: 2;
+        margin: auto;
+        margin-top: 2%;
+    }
+
+    .middel-container p {
+        font-size: 1.4rem;
+    }
+
+    #underpunkt {
+        font-size: 1.2rem;
+    }
+
+    .link {
+        padding: 1rem 3rem;
+        font-size: 22px;
+    }
+
+    .bottom p {
+        font-size: 1.4rem;
+    }
+
+    .tekst-te {
+        font-size: 1.4rem;
+        margin: 0rem 2rem;
+    }
+
+    .top h3 {
+        font-size: 3rem;
+    }
+    
+    .middel h3 {
+        font-size: 3rem;
+        margin: 3rem 0rem;
+    }
+
+    .voreste-pic {
+        order: 2;
+        width: 30%;
+        margin: auto;
+    }
+
+    .indhold {
+        width: 35%;
+        margin: auto;
+    }
+
+    .indhold img {
+        width: 80%;
+    }
+
+    .banner h3 {
+        font-size: 2.2rem;
+        margin: auto;
+    }
+
+    .banner-tekst {
+        font-size: 1.2rem;
+        width: 50%;
+        margin: auto;
+    }
+
+    .shop-container-top {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop-container-middel {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop-container-bottom {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .shop {
+        width: 50%;
+        margin: auto;
+    }
+
+    .empty-cart {
+        width: 50%;
+        margin: auto;
+    }
+
+    .sadbag {
+        width: 50%;
+    }
+
+    .empty2 {
+        font-size: 1.4rem;
+    }
+}
